@@ -1,0 +1,5 @@
+error[E0599]: no method named `area` found for reference `&Circle` in the current scope
+  --> tests/ui/fail-01-missing-fn.rs:15:21
+   |
+15 | #[enum_inner_method(area(f64) -> f64)]
+   |                     ^^^^ method not found in `&Circle`
