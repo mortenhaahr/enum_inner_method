@@ -12,7 +12,7 @@ impl Rectangle {
     }
 }
 
-#[enum_inner_method(nothing())]
+#[enum_inner_method(fn nothing(&self))]
 pub enum ShapeEnum {
     Circle(Circle),
     Rectangle(Rectangle),

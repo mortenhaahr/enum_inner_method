@@ -1,0 +1,19 @@
+error: custom attribute panicked
+  --> tests/ui/fail-10-no-self.rs:14:1
+   |
+14 | #[enum_inner_method(fn nothing())]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: message: In current version the first argument must be self
+
+error[E0433]: failed to resolve: use of undeclared type `ShapeEnum`
+  --> tests/ui/fail-10-no-self.rs:21:19
+   |
+21 |     let shapes = [ShapeEnum::Circle(Circle), ShapeEnum::Rectangle(Rectangle)];
+   |                   ^^^^^^^^^ use of undeclared type `ShapeEnum`
+
+error[E0433]: failed to resolve: use of undeclared type `ShapeEnum`
+  --> tests/ui/fail-10-no-self.rs:21:46
+   |
+21 |     let shapes = [ShapeEnum::Circle(Circle), ShapeEnum::Rectangle(Rectangle)];
+   |                                              ^^^^^^^^^ use of undeclared type `ShapeEnum`

@@ -23,7 +23,7 @@ impl Rectangle {
     }
 }
 
-#[enum_inner_method(draw(Point) -> Drawable)]
+#[enum_inner_method(fn draw(&self, x: Point) -> Drawable)]
 pub enum ShapeEnum {
     Circle(Circle),
     Rectangle(Rectangle),

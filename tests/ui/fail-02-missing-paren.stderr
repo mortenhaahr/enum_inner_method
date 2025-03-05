@@ -1,5 +1,0 @@
-error: expected parentheses
-  --> tests/ui/fail-02-missing-paren.rs:17:26
-   |
-17 | #[enum_inner_method(area -> f64)]
-   |                          ^
