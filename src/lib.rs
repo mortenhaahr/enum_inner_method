@@ -53,7 +53,7 @@ pub fn enum_inner_method(attr: TokenStream, item: TokenStream) -> TokenStream {
         #input
 
         impl #enum_name {
-            #func{
+            pub #func{
                 match self {
                     #(#match_arms)*
                 }
